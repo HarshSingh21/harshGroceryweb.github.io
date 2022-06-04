@@ -4,7 +4,7 @@
     --orange:#20369ff0;
     --black:#5b0059;
     --light-color:#360000;
-    --box-shadow:0 .5rem 1.5rem rgb(252 26 161 / 32%);
+    --box-shadow:0 .5rem 1.5rem rgb(110 44 240 / 85%);
     --border:.2rem solid rgb(2 40 224);
     --outline:.1rem solid rgb(209 110 25 / 31%);
     --outline-hover:.2rem solid var(--blue);
@@ -32,8 +32,11 @@ body{
     
 }
 
-section{
-    padding:2rem 9%;
+
+
+video{
+    margin: 0;
+    width: 100%;
 }
 
 .heading{
@@ -46,7 +49,7 @@ section{
 
 .heading span{
     background: var(--red);
-    color:#fff;
+    color:rgb(217 92 19);
     display: inline-block;
     padding:.5rem 3rem;
     clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
@@ -66,7 +69,7 @@ section{
 
 .btn:hover{
     background: var(--red);
-    color:#fff;
+    color: var(--orange);
 }
 
 .header{
@@ -90,15 +93,41 @@ section{
 .header .logo i{
     color:var(--orange);
 }
+.header .navbar{
+    display: flex;
+    flex-direction: row;
+}
 
-.header .navbar a{
+.header .navbar li{
     font-size: 1.7rem;
     margin:0 1rem;
     color:var(--black);
+    text-decoration: none;
+    list-style-type: none;
+}
+.header .navbar li a{
+    color:var(--black);
 }
 
-.header .navbar a:hover{
+.sub-menu-1{
+    display: none;
+}
+.sub-menu-1 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.header .navbar li a:hover {
     color:var(--orange);
+}
+.header .navbar li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.664);
+    padding-top: 15px;
+    margin-left: -15px;
 }
 
 .header .icons div{
@@ -281,13 +310,17 @@ section{
     background: url(../image/12a.mp4) no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 17rem;
-    padding-bottom: 10rem;
+    /* padding-top: 17rem; */
+    width: 100%;
+    position: relative;
+    padding: 0;
 }
 
 .home .content{
     text-align: center;
     width:60rem;
+    position: absolute;
+    align-items: center;
 }
 
 .home .content h3{
@@ -314,14 +347,14 @@ section{
 
 .features .box-container .box{
     padding:3rem 2rem;
-    background: #fff;
+    background: rgb(255, 249, 249);
     outline: var(--outline);
     outline-offset: -1rem;
     text-align: center;
     box-shadow: var(--box-shadow);
 }
 
-.features .box-container .box:hover{
+.features .box-container :hover{
     outline: var(--outline-hover);
     outline-offset: 0rem;
 }
@@ -623,16 +656,6 @@ section{
 .footer .credit span{
     color:var(--orange);
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /* media queries  */
