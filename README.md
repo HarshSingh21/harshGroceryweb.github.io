@@ -1,6 +1,6 @@
 Hi Folks,
 
-I am Harsh Singh CSE (Undergrad 2025 ). This is my first project as well as an introduction to development ( Html,Css ,Java Script ).
+I am Harsh Singh CSE (Undergrad 2025 ). This is my first project as well as an introduction to  Front end development ( Html,Css ,Java Script ).
 
 The project topic is the Grocer website, in which we provide products related to home use and necessary things for daily use by which users can 
 
