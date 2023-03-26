@@ -11,7 +11,9 @@ Thank you
 Harsh Singh
 <br>
 
-
+ 
+ Date :  26/03/2023
+ <br>
 Version : 2 
 
 Update will be in cart system and intergrating the payment gateway to give user a friendly experiance 
